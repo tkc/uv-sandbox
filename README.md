@@ -32,7 +32,6 @@ make format
 # 配布用パッケージのビルド
 make build
 
-
 # 利用可能なコマンドのヘルプを表示
 make help
 ```
