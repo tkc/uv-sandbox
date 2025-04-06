@@ -35,3 +35,16 @@ make build
 # Show help for available commands
 make help
 ```
+
+
+examples
+```bash
+uv venv --python=3,10
+```
+```bash
+uv venv --python=3.11
+```
+
+```bash
+uv venv --python=3.12
+```
