@@ -19,7 +19,7 @@ setup:
 	uv sync
 
 run:
-	uv run add.py 
+	uv run sample.py
 
 lint:
 	uv run ruff check --fix
