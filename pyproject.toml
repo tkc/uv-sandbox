@@ -1,0 +1,42 @@
+[project]
+name = "uv-sandbox"
+version = "0.1.0"
+description = "A simple Python project demonstrating uv usage."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" } # または適切なライセンスを指定
+authors = [
+    { name = "Your Name", email = "you@example.com" }, # 実際の情報に置き換えてください
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License", # ライセンスに合わせて変更
+    "Operating System :: OS Independent",
+    "Development Status :: 3 - Alpha", # 開発状況に合わせて変更
+]
+dependencies = [
+    "pytest>=8.3.5",
+    "ruff>=0.11.4",
+]
+
+
+[tool.ruff]
+# ターゲットPythonバージョン
+target-version = "py312"
+
+# 行の最大長
+line-length = 100
+
+[tool.ruff.lint]
+# lintに含めるルール
+# インポートの自動整理 (ドット付きキー)
+isort.known-third-party = []
+# 静的解析の設定 (ドット付きキー)
+mccabe.max-complexity = 10
+
+# フォーマッティングの設定
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
