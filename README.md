@@ -1,37 +1,37 @@
-# UV + Make サンプルプロジェクト
+# UV + Make Sample Project
 
-このリポジトリは、Python のパッケージマネージャー `uv` と `Makefile` を組み合わせた基本的な使い方を示すサンプルです。Python 3.12 を使用した簡単な足し算パッケージを提供します。
+This repository provides a sample demonstrating the basic usage of combining the Python package manager `uv` with a `Makefile`. It offers a simple addition package using Python 3.12.
 
-## 前提条件
+## Prerequisites
 
-このプロジェクトを使用するには、事前に `uv` がシステムにインストールされている必要があります。
+To use this project, `uv` must be installed on your system beforehand.
 
-**uv のインストール (macOS / Linux):**
+**Install uv (macOS / Linux):**
 
 ```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
-または、他のインストール方法については [uv のドキュメント](https://github.com/astral-sh/uv#installation) を参照してください。
+Alternatively, refer to the [uv documentation](https://github.com/astral-sh/uv#installation) for other installation methods.
 
-## セットアップと実行方法 (macOS / Linux)
+## Setup and Execution (macOS / Linux)
 
 ```bash
-# Python 仮想環境の作成と依存関係のインストール
+# Create a Python virtual environment and install dependencies
 make setup
 
-# プログラムの実行 (モジュールとして)
+# Run the program (as a module)
 make run
 
-# Ruff を使ったコードのチェック
+# Check code using Ruff
 make lint
 
-# Ruff を使ったコードのフォーマット
+# Format code using Ruff
 make format
 
-# 配布用パッケージのビルド
+# Build the distribution package
 make build
 
-# 利用可能なコマンドのヘルプを表示
+# Show help for available commands
 make help
 ```
