@@ -48,3 +48,9 @@ uv venv --python=3.11
 ```bash
 uv venv --python=3.12
 ```
+
+activate
+```bash
+source .venv/bin/activate
+```
+
